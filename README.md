@@ -61,7 +61,7 @@ Observe DHCP Traffic
 <p>
 Observe DNS Traffic
 
-1. Back in Wireshark, filter for DNS traffic only
+1. In WireShark filter for DNS traffic only
 
 2. From your Windows 10 VM within a command line, use nslookup to see what google.com and disney.com's IP addresses are
 
