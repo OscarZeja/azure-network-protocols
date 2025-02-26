@@ -34,6 +34,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
 (Configuring a Firewall [Network Security Groupl)
  Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM
+
 1. Open the Network Security Group your Ubuntu VM is using and disable incoming (inbound) ICMP traffic
 
 2. Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity
