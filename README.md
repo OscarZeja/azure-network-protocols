@@ -3,7 +3,7 @@
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we observe network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+In this tutorial, we observe network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Powershell. <br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -22,12 +22,11 @@ In this tutorial, we observe network traffic to and from Azure Virtual Machines 
 
 <h2>Actions and Observations</h2>
 
+![Screenshot 2025-03-03 201614](https://github.com/user-attachments/assets/a85b12b3-ff03-41f1-9922-61657bccefb1)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-(Configuring a Firewall [Network Security Group)
- Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM
+ Initiate a ping from your Windows 10 VM to your Ubuntu VM
 
 1. Open the Network Security Group your Ubuntu VM is using and disable incoming (inbound) ICMP traffic
 
@@ -35,15 +34,16 @@ In this tutorial, we observe network traffic to and from Azure Virtual Machines 
 
 3. Re-enable ICMP traffic for the Network Security Group your Ubuntu VM
 
-4. Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity (should start working)
+4. Back in the Windows 10 VM, observe the ICMP traffic in WireShark and the command line Ping activity (Powershell)
 
 5. Stop the ping activity</p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
+
+![Screenshot 2025-03-03 202358](https://github.com/user-attachments/assets/a8b4893d-a750-4161-8ad8-a047ffdb9d3d)
+
+
+
 Observe DHCP Traffic
 
 1. In Wireshark, filter for DHCP traffic only
@@ -55,10 +55,11 @@ Observe DHCP Traffic
 4. Observe the DHCP traffic appearing in WireShark</p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
+
+![Screenshot 2025-03-03 202732](https://github.com/user-attachments/assets/23b38c0b-66a7-4683-b1b1-53862635729b)
+
+
+
 Observe DNS Traffic
 
 1. In WireShark filter for DNS traffic only
